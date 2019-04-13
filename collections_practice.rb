@@ -60,7 +60,22 @@
     count
   end
   
-  
+#   def consolidate_cart(cart)
+#   consolidated_cart_hash = {}
+#   cart.each do |item_info|
+#     item_info.each do |name, data|
+#       consolidated_cart_hash[name] = data
+#       if consolidated_cart_hash[name][:count]
+#         consolidated_cart_hash[name][:count] +=1  
+#       else
+#         consolidated_cart_hash[name][:count] =1 
+#       #binding.pry
+#       end
+#     end
+#   end
+#   consolidated_cart_hash
+# end
+
   def merge_data (data1, data2)
     #combines two nested data structures into one (FAILED - 7)
    data1.merge(data2)
