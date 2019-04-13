@@ -51,13 +51,15 @@
   
   def count_elements (array)
     #count how many times something appears in an array (FAILED - 6)
-    count = 0 
-    array.each do |i|
-      if array.include?(i)
-        i[:count] +=1
+    array.map do |hash|
+      hash.map do |key, value|
+        if hash[key][value][:count]
+          hash[key][value][:count] +=1 
+        else
+          hash[key][value][:count] = 1
+        end
       end
     end
-    count
   end
   
 #   def consolidate_cart(cart)
