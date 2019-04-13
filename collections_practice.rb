@@ -53,10 +53,10 @@
     #count how many times something appears in an array (FAILED - 6)
     array.map do |hash|
       hash.map do |key, value|
-        if hash[key][value][:count]
-          hash[key][value][:count] +=1 
+        if hash[:count]
+          hash[:count] +=1 
         else
-          hash[key][value][:count] = 1
+          hash[:count] = 1
         end
       end
     end
