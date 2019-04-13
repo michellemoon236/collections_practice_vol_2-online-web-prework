@@ -54,7 +54,7 @@
     count = 0 
     array.each do |i|
       if array.include?(i)
-        i[:count] 1
+        i[:count] +=1
       end
     end
     count
