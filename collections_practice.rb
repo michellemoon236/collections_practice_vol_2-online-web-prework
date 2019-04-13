@@ -51,8 +51,8 @@
   
   def count_elements (array)
     #count how many times something appears in an array (FAILED - 6)
-    array.map do |hash|
-      hash.map do |key, value|
+    array.each do |hash|
+      hash.each do |key, value|
         if hash[:count]
           hash[:count] +=1 
         else
